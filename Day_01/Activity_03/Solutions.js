@@ -8,5 +8,17 @@ let Languages = [
     "TypeScript",
     "Python",
     "GoLang",
-    //Continue
-]
+    "Rust"
+];
+let MyData = {
+    name: MyName,
+    married: MaritalStatus,
+    Skills: Languages,
+};
+
+
+console.log(`${MyName} --> type --> ${typeof MyName}`);
+console.log(`${MyAge} --> type --> ${typeof MyAge}`);
+console.log(`${MaritalStatus} --> type --> ${typeof MaritalStatus}`);
+console.log(`${Languages} --> type --> ${typeof Languages}`);
+console.log(`${MyData} --> type --> ${typeof MyData}`);

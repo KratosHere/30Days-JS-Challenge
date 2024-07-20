@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Eligibility to Vote!</title>
+
+    <style>
+        body {
+            background-color: rgb(0,10,40);
+            color: azure;
+        }
+        #displayResult {
+            padding: 20px;
+            background-color: black;
+            color: yellowgreen;
+        }
+        #ageInput {
+            padding: 5px;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <input id="ageInput" type="number" placeholder="Enter Age:"> ==>
+    <input id="displayResult" type="text" readonly>
+
+    <br><br>
+
+    <button id="checkBtn" style="font-size: x-large; background-color: black; color: wheat;">Check Eligibility!</button>
+
+
+
+
+
+    <script>
+
+        let ageInput = document.querySelector("#ageInput");
+        let CheckBtn = document.querySelector("#checkBtn");
+        let Display = document.querySelector("#displayResult");
+
+        CheckBtn.addEventListener("click" , () => {
+
+            let AGE = parseInt(ageInput.value);
+            
+            if (AGE >= 18) {
+                Display.value = `you're Eligible to Vote!!`
+            }
+            else {
+                Display.value = `You're Not Eligible!!`
+            }
+
+        })
+
+    </script>
+</body>
+</html>
